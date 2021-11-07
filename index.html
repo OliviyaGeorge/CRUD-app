@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit()">
+                    <div>
+                        <label>Full Name*</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                        <input type="text" name="fullName" id="fullname">
+                    </div>
+                    <div>
+                        <label>Roll No</label>
+                        <input type="number" name="rollno" id="rollno">
+                    </div>
+                    <div>
+                        <label>Mobile Number</label>
+                        <input type="number" name="mobile" id="mobile">
+                    </div>
+                    <div>
+                        <label>classid</label>
+                        <input type="number" name="classid" id="classid">
+                    </div>
+                    <div class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="studentlist">
+                    <thead>
+                        <tr>
+                            <th>Full Name</th>
+                            <th>RollNo</th>
+                            <th>MobNo</th>
+                            <th>classid</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
